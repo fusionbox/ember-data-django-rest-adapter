@@ -5,7 +5,7 @@ function rejectionHandler(reason) {
 
 DS.DjangoRESTAdapter = DS.RESTAdapter.extend({
     bulkCommit: false,
-    serializer: DS.DjangoRESTSerializer,
+    defaultSerializer: 'DS.DjangoRESTSerializer',
 
     createRecord: function(store, type, record) {
         var root, adapter, data;

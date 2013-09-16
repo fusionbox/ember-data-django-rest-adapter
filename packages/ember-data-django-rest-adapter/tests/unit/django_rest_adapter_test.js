@@ -72,9 +72,6 @@ module("Django REST Adapter", {
         ajaxHash = undefined;
 
         Adapter = DS.DjangoRESTAdapter.extend();
-        Adapter.configure('plurals', {
-            person: 'people'
-        });
 
         adapter = Adapter.create({
             ajax: function(url, type, hash) {
